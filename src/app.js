@@ -32,6 +32,16 @@ app.get('/help',(req,res)=>{
         name:'Deepak'
     })
 })
+
+app.get('/about',(req,res)=>{
+    res.render('about',{
+        helpText:'This is About page...',
+        title:'About',
+        name:'Deepak'
+    })
+})
+
+
 app.get('/weather',(req,res)=>{
 
     if(!req.query.address){
